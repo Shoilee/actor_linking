@@ -25,18 +25,20 @@ Please visit git repo: https://github.com/Shoilee/deezymatch_jrcnames
 
 ## Experiment
 
-### On Ground Truth data: 
-[exp300.ipynb](exp300/exp300.ipynb) script represents with ground truth data, which might involve specific configurations or variations of the matching algorithms. Please refer to the script for detailed information on the experiment.
+### Ground Truth data: 
+[exp300.ipynb](exp300/exp300.ipynb) script represents experiment with ground truth data, which involves running different variations of the matching algorithms and generating results. Please refer to the script for detailed information on the experiment.
 
-### exp202.py: 
-Similarly, [exp202.ipynb](exp202/exp202.ipynb)  represents Experiment with NMVW persons vs Bronbeek person name. This file likely contains specific settings, data, or methodologies related to the corresponding experiment. Refer to the script for detailed insights.
+### NMVW persons vs Bronbeek person: 
+Similarly, [exp202.ipynb](exp202/exp202.ipynb)  represents experiment with NMVW persons vs Bronbeek person name. Please, refer to the script for detailed insights.
+
+TODO: add detail about how it was evaluated.
 
 ## Usage
 To use the provided scripts, follow these general steps:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/Shoilee/actor_linking.git
 ```
 2. Install and activate the environment
 ```bash
@@ -45,13 +47,17 @@ conda activate actor_linking
 ```
 3. Navigate to the project directory:
 ```bash
-cd exp-dictionary
+# go the experiment directory
+cd exp300
 ```
-1. Execute the desired script using Python:
+4. Execute the desired script using iPython:
 ```bash
 ipython
-%run your_script.ipynb
-python exp*.ipynb
+python exp300.ipynb
+```
+5. Deactivate environment
+```bash
+conda deactivate
 ```
 
 ## Notes
