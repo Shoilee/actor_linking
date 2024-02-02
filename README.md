@@ -1,17 +1,20 @@
 # Overview
-This repository contains a set of Python scripts and experiments designed to perform various string matching tasks. The scripts provided cover a range of matching techniques, including abbreviation matching, surname matching, fuzzy string matching, and exact string matching.
+This repository contains a set of Python scripts and experiments designed to perform various string matching tasks. The scripts provided cover a range of matching techniques, including exact string matching, intial+surname(abbraviation) matching, surname matching and fuzzy string matching,.
 
 ## File Descriptions
 matchwithabbreviation.py: This script is dedicated to abbreviation matching. It implements a method to match strings based on abbreviations, allowing for efficient comparison of abbreviated terms.
+
+### matchexactstring.py: 
+This script deals with exact string matching. It provides a straightforward method to match strings precisely, without considering any variations or similarities.
+
+### matchwithabbreviation.py: 
+This script is dedicated to initial+surname matching. It implements a method to extract initials from a given name or a name with specific patterns. It intelligently handles various cases, ensuring accurate extraction and formatting of initials.
 
 ### matchsurname.py: 
 This script focuses on surname matching. It provides functionality to compare and match surnames, considering variations and common misspellings.
 
 ### matchfuzzystring.py: 
 The script matchfuzzystring.py is designed for fuzzy string matching. It employs algorithms that allow for matching strings that are similar but not necessarily identical, considering typos, variations, and other discrepancies.
-
-### matchexactstring.py: 
-This script deals with exact string matching. It provides a straightforward method to match strings precisely, without considering any variations or similarities.
 
 ### main.py: 
 The main.py file serves as the entry point for executing and testing the string matching scripts. It may include sample use cases or demonstrations for each matching technique.
