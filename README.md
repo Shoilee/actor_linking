@@ -55,10 +55,5 @@ python exp*.ipynb
 ```
 
 ## Notes
-- Ensure that you have Python installed on your machine before running the scripts.
-
-- Check the specific script's documentation for any additional dependencies or requirements.
-
-- Experiment scripts (exp300.py and exp202.py) may have specific instructions or data configurations. Refer to each script's comments or documentation for more details.
 
 Feel free to explore and modify the scripts to suit your specific use cases. If you encounter any issues or have suggestions, please open an issue or submit a pull request.
