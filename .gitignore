@@ -14,3 +14,4 @@ aceh_object_linking.ipynb
 queries/
 candidates/
 __pycache__
+.DS_Store
