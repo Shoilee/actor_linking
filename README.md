@@ -1,47 +1,57 @@
 # Overview
 This repository contains a set of Python scripts and experiments designed to perform various string matching tasks. The scripts provided cover a range of matching techniques, including exact string matching, intial+surname(abbraviation) matching, surname matching and fuzzy string matching,.
 
-## File Descriptions
-matchwithabbreviation.py: This script is dedicated to abbreviation matching. It implements a method to match strings based on abbreviations, allowing for efficient comparison of abbreviated terms.
+## Supported String Matching Strategies
 
-### matchexactstring.py: 
-This script deals with exact string matching. It provides a straightforward method to match strings precisely, without considering any variations or similarities.
+### Exact String Matching: 
+The script, [matchexactstring.py](matchexactstring/match_exact_string.py), deals with exact string matching. It provides a straightforward method to match strings precisely, without considering any variations or similarities.
 
-### matchwithabbreviation.py: 
-This script is dedicated to initial+surname matching. It implements a method to extract initials from a given name or a name with specific patterns. It intelligently handles various cases, ensuring accurate extraction and formatting of initials.
+### Initial+Surname Match: 
+The script, [matchwithabbreviation.py](matchwithabbreviation/match_with_abbreviation.py), is dedicated to initial+surname matching. It implements a method to extract initials from a given name or a name with specific patterns. It intelligently handles various cases, ensuring accurate extraction and formatting of initials.
 
-### matchsurname.py: 
-This script focuses on surname matching. It provides functionality to compare and match surnames, considering variations and common misspellings.
+### Surname Match: 
+The script, [matchsurname.py](matchsurname/match_surname.py), focuses on surname matching. It provides functionality to compare and match surnames, considering variations and common misspellings.
 
-### matchfuzzystring.py: 
-The script matchfuzzystring.py is designed for fuzzy string matching. It employs algorithms that allow for matching strings that are similar but not necessarily identical, considering typos, variations, and other discrepancies.
+### Fuzzy String Match: 
+[matchfuzzystring.py](matchfuzzystring/match_fuzzy_string.py) script is designed for fuzzy string matching. It employs algorithms that allow for matching strings that are similar but not necessarily identical, considering typos, variations, and other discrepancies.
 
-### main.py: 
-The main.py file serves as the entry point for executing and testing the string matching scripts. It may include sample use cases or demonstrations for each matching technique.
 
-### exp300.py: 
-This script represents Experiment 300, which might involve specific configurations or variations of the matching algorithms. Please refer to the script for detailed information on the experiment.
+### DeezyMatch:
+
+The deezy mis trained and fine-tuned under a different repo. 
+
+Please visit git repo: https://github.com/Shoilee/deezymatch_jrcnames
+
+
+## Experiment
+
+### On Ground Truth data: 
+[exp300.ipynb](exp300/exp300.ipynb) script represents with ground truth data, which might involve specific configurations or variations of the matching algorithms. Please refer to the script for detailed information on the experiment.
 
 ### exp202.py: 
-Similarly, exp202.py represents Experiment 202. This file likely contains specific settings, data, or methodologies related to the corresponding experiment. Refer to the script for detailed insights.
+Similarly, [exp202.ipynb](exp202/exp202.ipynb)  represents Experiment with NMVW persons vs Bronbeek person name. This file likely contains specific settings, data, or methodologies related to the corresponding experiment. Refer to the script for detailed insights.
 
 ## Usage
 To use the provided scripts, follow these general steps:
 
 1. Clone the repository to your local machine:
 ```bash
-# Copy code
 git clone https://github.com/your-username/your-repository.git
 ```
-2. Navigate to the project directory:
+2. Install and activate the environment
 ```bash
-# Copy code
-cd your-repository
+conda env create -f environment.yml
+conda activate actor_linking
 ```
-3. Execute the desired script using Python:
+3. Navigate to the project directory:
 ```bash
-Copy code
-python script_name.py
+cd exp-dictionary
+```
+1. Execute the desired script using Python:
+```bash
+ipython
+%run your_script.ipynb
+python exp*.ipynb
 ```
 
 ## Notes
